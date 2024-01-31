@@ -1,78 +1,68 @@
 # Fireboy and Watergirl
 
-## Autores
+## Description
 
-Andre Jacob Suaide
+&nbsp;&nbsp;&nbsp;&nbsp;This repository contains the implementation of the Fireboy and Watergirl game in Assembly for the São Carlos Institute of Mathematical and Computing Sciences (ICMC) processor. To simulate the game on your machine, follow the instructions in the repository [Processador ICMC](https://github.com/simoesusp/Processador-ICMC/blob/master/Install_Packages/) compatible with Windows, Linux and MacOS.
 
-Felipe Aparecido da Silva
+## Starting the game
+
+&nbsp;&nbsp;&nbsp;&nbsp;To start the game, copy and paste the file **(sim)** and **(montador)** generated in the instructions present in [Processador ICMC](https://github.com/simoesusp/Processador-ICMC/blob/master/Install_Packages/), according to your machine's operating system, and replace them in the game folder. Afterwards, use the following commands to assemble and run the game simulation:
+
+```
+./montador Game.asm Game.mif
+./sim Game.mif charmap.mif
+```
+
+## Controls
+
+&nbsp;&nbsp;&nbsp;&nbsp;The game has two characters that are controlled by the following keyboard keys:
+
+- Fireboy movement:
+
+&nbsp;&nbsp;&nbsp;&nbsp;W - Jump
+
+&nbsp;&nbsp;&nbsp;&nbsp;A - Left
+
+&nbsp;&nbsp;&nbsp;&nbsp;D - Right
+
+- Watergirl movement:
+
+&nbsp;&nbsp;&nbsp;&nbsp;I - Jump
+
+&nbsp;&nbsp;&nbsp;&nbsp;J - Left
+
+&nbsp;&nbsp;&nbsp;&nbsp;L - Right
+
+## Objective
+
+&nbsp;&nbsp;&nbsp;&nbsp; The objective of the game is to reach the door with both characters to progress to the next level. However, there is an additional challenge: the player controlling Fireboy must avoid the water, while the player controlling Watergirl must dodge the lava spread across the stage. If one of the players touches an area prohibited to their respective character, the phase will be restarted for a new attempt.
+
+## Contributions
+
+&nbsp;&nbsp;&nbsp;&nbsp;This project was developed as an evaluation method for the discipline SSC0902 - Computer Organization and Architecture, at the University of São Paulo. The project is open for any improvement.
+
+## Develop by
+
+[Andre Jacob Suaide](https://github.com/eletrojacob)
+
+[Felipe Aparecido da Silva](https://github.com/FehASilva)
 
 [Gustavo Carvalho Araujo](https://www.linkedin.com/in/guaraujoc/)
 
-Henrique de Oliveira Araujo
+[Henrique de Oliveira Araujo](https://github.com/HerbGlrt)
 
-Marcus Vinicius da Silva
+[Marcus Vinicius da Silva](https://github.com/MarcussSilva)
 
-Oliver Kenzo Kobayashi
+[Oliver Kenzo Kobayashi](https://www.instagram.com/_okobayashi/)
 
 [Rodrigo Rodrigues de Castro](https://github.com/rodrigorcz)
 
-Viktor Sergio Ferreira
+[Viktor Sergio Ferreira](https://github.com/Viktor-S-Ferreira)
 
-Vitor Augusto Paiva de Brito
+[Vitor Augusto Paiva de Brito](https://github.com/vtpaiva)
 
-Yazid Alamou Bouari
+[Yazid Alamou Bouari](https://github.com/Iambouari)
 
+## License
 
-## Descrição
-
-&nbsp;&nbsp;&nbsp;&nbsp;Este repositório contém a implementação do jogo Fireboy e Watergirl em Assembly para o processador do Instituto de Ciências Matemáticas e de Computação de São Carlos (ICMC). Para o seu simular o jogo em sua máquina, siga as intruções do repositório do [Processador do ICMC](https://github.com/simoesusp/Processador-ICMC/blob/master/Install_Packages/) de acordo com o sistema operacional da sua máquina.
-
-## Inicializando o jogo
-
-&nbsp;&nbsp;&nbsp;&nbsp;Para inicializar o jogo, copie e cole o arquivo (sim) e (montador) gerado nas intruções do [Processador do ICMC](https://github.com/simoesusp/Processador-ICMC/blob/master/Install_Packages/) e os substitua na pasta do jogo. Logo após utilize os seguintes comandos para montar e rodar a simulação do jogo:
-
-```
-./montador Jogo.asm Jogo.mif
-./sim Jogo.mif charmap.mif
-```
-
-## Comandos
-
-&nbsp;&nbsp;&nbsp;&nbsp;O jogo possui dois personagens e são controlados pelas setas do teclado e pelas teclas WASD.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Para o personagem do Fireboy temos as ações:
-
-&nbsp;&nbsp;&nbsp;&nbsp;W - Pular
-
-&nbsp;&nbsp;&nbsp;&nbsp;A - Andar para a esquerda
-
-&nbsp;&nbsp;&nbsp;&nbsp;S - Esgueirar
-
-&nbsp;&nbsp;&nbsp;&nbsp;D - Andar para a direita
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;Para o personagem da Watergirl temos as ações:
-
-&nbsp;&nbsp;&nbsp;&nbsp;^ - Pular
-
-&nbsp;&nbsp;&nbsp;&nbsp;< - Andar para a esquerda
-
-&nbsp;&nbsp;&nbsp;&nbsp;> - Andar para a direita
-
-&nbsp;&nbsp;&nbsp;&nbsp;V - Esgueirar
-
-## Objetivo
-
-&nbsp;&nbsp;&nbsp;&nbsp;O objetivo do jogo é explorar o mapa para encontrar a chave, desbloquear a porta e progredir para o próximo nível. No entanto, há um desafio adicional: o jogador controlando o Fireboy deve evitar a água, enquanto o jogador controlando a Watergirl precisa esquivar-se da lava espalhada pelo cenário. Se um dos jogadores tocar em uma área proibida para seu respectivo personagem, a fase será reiniciada para uma nova tentativa.
-
-## Requerimentos de compilação
-
-&nbsp;&nbsp;&nbsp;&nbsp;Para compilar o código no simulador, é necessário ter um computador com Windows, Linux ou MacOS de sistema operacional e seguir as instruções do [Processador do ICMC](https://github.com/simoesusp/Processador-ICMC/blob/master/Install_Packages/) para gerar os executáveis (sim) e (montador).
-
-## Contribuições
-
-&nbsp;&nbsp;&nbsp;&nbsp;Este projeto está sendo desenvolvido como método avaliativo da disciplina SSC0902 - Organização e Arquitetura de Computadores, na Universidade de São Paulo. Portanto, enquanto estiver em desenvolvimento, as contribuições ficam limitadas aos integrantes do grupo da disciplina. Porém, ao finalizar o projeto, ele estará aberto para qualquer melhoria sugerida.
-
-## Licença
-
-&nbsp;&nbsp;&nbsp;&nbsp;Este programa está sobre a licença [MIT License](https://opensource.org/licenses/MIT).
+&nbsp;&nbsp;&nbsp;&nbsp;This program is under license [MIT License](https://opensource.org/licenses/MIT).

@@ -11,20 +11,20 @@ saltarWaterGirl: var #1
 linhaAtual: var #1
 colunaAtual: var #1
 
-porta1FaseAtual: var #1 ;271 --
-porta2FaseAtual: var #1 ;276 --
+porta1FaseAtual: var #1 
+porta2FaseAtual: var #1 
 
-Lava1Fase1: var #1 ; 28*40 + 9 = 1129
-Lava2Fase1: var #1 ; 22*40 + 18 = 898
-poca1Fase1: var #1 ; 28*40 + 21 = 1141
+Lava1Fase1: var #1 
+Lava2Fase1: var #1
+poca1Fase1: var #1 
 
-Lava1Fase2: var #1 ; 28*40 + 27 = 1147
-Lava2Fase2: var #1 ; 23*40 + 5 = 925
-Lava3Fase2: var #1 ; 11*40 + 9 = 449
+Lava1Fase2: var #1 
+Lava2Fase2: var #1 
+Lava3Fase2: var #1 
 
-poca1Fase2: var #1 ; 28*40 + 8 = 1128
-poca2Fase2: var #1 ; 23*40 + 31 = 951
-poca3Fase2: var #1 ; 11*40 + 25 = 465
+poca1Fase2: var #1 
+poca2Fase2: var #1 
+poca3Fase2: var #1
 
 numFaseAtual: var #1
 
@@ -33,17 +33,16 @@ telaAtual: var #1
 main:
 	
 	call iniciaNivel1
+
     call printTelainicialdojogoScreen
-	
-    
 	call LeituraLoop
-    load r1, letra	;Carrega a letra digitada
+    load r1, letra	
 
-    loadn r0, #'e'
-    cmp r0, r1		
-    ceq imprimeInicio
-
+    call imprimeInicio
  	call pressioneE
+
+    loadn r1, #Tela6Linha0
+	store telaAtual, r1
 
 	loadn r3, #883
 	store posicaoFireBoy, r3	;posicao inicial Fireboy
@@ -53,9 +52,6 @@ main:
     
  	load r4, saltarFireBoy
 	call zeraSalto	;			Inicializa a variável salto como 0
-	
-	loadn r1, #Tela6Linha0
-	store telaAtual, r1
 
 	loadn r3, #1043
  	store posicaoWaterGirl, r3	;posicao inicial Wategirl
@@ -1091,11 +1087,11 @@ Tela1Linha14 : string "                                        "
 Tela1Linha15 : string "                                        "
 Tela1Linha16 : string "   Fireboy                              "
 Tela1Linha17 : string "                                        "
-Tela1Linha18 : string "  W - Pular                             "
+Tela1Linha18 : string "  W - Jump                              "
 Tela1Linha19 : string "                                        "
-Tela1Linha20 : string "  A - Esquerda                          "
+Tela1Linha20 : string "  A - Left                              "
 Tela1Linha21 : string "                                        "
-Tela1Linha22 : string "  D - Direita                           "
+Tela1Linha22 : string "  D - Right                             "
 Tela1Linha23 : string "                                        "
 Tela1Linha24 : string "        !                               "
 Tela1Linha25 : string "                                        "
@@ -1126,11 +1122,11 @@ Tela3Linha14 : string "                                        "
 Tela3Linha15 : string "                                        "
 Tela3Linha16 : string "                            Watergirl   "
 Tela3Linha17 : string "                                        "
-Tela3Linha18 : string "                        I - Pular       "
+Tela3Linha18 : string "                        I - Jump        "
 Tela3Linha19 : string "                                        "
-Tela3Linha20 : string "                        J - Esquerda    "
+Tela3Linha20 : string "                        J - Left        "
 Tela3Linha21 : string "                                        "
-Tela3Linha22 : string "                        L - Direita     "
+Tela3Linha22 : string "                        L - Right       "
 Tela3Linha23 : string "                                        "
 Tela3Linha24 : string "                              $         "
 Tela3Linha25 : string "                                        "
@@ -1151,10 +1147,10 @@ Tela4Linha4  : string "%                                      %"
 Tela4Linha5  : string "%                                      %"
 Tela4Linha6  : string "%                                      %"
 Tela4Linha7  : string "%                                      %"
-Tela4Linha8  : string "%                 e                    %"
+Tela4Linha8  : string "%                 &                    %"
 Tela4Linha9  : string "%                                      %"
 Tela4Linha10 : string "%                                      %"
-Tela4Linha11 : string "%              Controles               %"
+Tela4Linha11 : string "%                Controls              %"
 Tela4Linha12 : string "%                                      %"
 Tela4Linha13 : string "%                                      %"
 Tela4Linha14 : string "%                                      %"
@@ -1170,7 +1166,7 @@ Tela4Linha23 : string "%                                      %"
 Tela4Linha24 : string "%                                      %"
 Tela4Linha25 : string "%                                      %"
 Tela4Linha26 : string "%                                      %"
-Tela4Linha27 : string "%     Pressione `E' para iniciar       %"
+Tela4Linha27 : string "%          Press `E' to start          %"
 Tela4Linha28 : string "%                                      %"
 Tela4Linha29  :string "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
 
@@ -1505,7 +1501,7 @@ Tela13Linha5  : string "                                        "
 Tela13Linha6  : string "           !                $           "
 Tela13Linha7  : string "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
 Tela13Linha8  : string "%                                      %"
-Tela13Linha9  : string "%              CREDITOS:               %"
+Tela13Linha9  : string "%               CREDITS:               %"
 Tela13Linha10 : string "%                                      %"
 Tela13Linha11 : string "%          Andre Jacob Suaide          %"
 Tela13Linha12 : string "%       Felipe Aparecido da Silva      %"
@@ -1524,7 +1520,7 @@ Tela13Linha24 : string "                                        "
 Tela13Linha25 : string "                                        "
 Tela13Linha26 : string "                                        "
 Tela13Linha27 : string "                                        "
-Tela13Linha28 : string "               Aperte 'e' para fechar   "
+Tela13Linha28 : string "                   Press 'e' to close   "
 Tela13Linha29 : string "                                        "
 
 
