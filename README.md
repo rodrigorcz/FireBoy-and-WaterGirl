@@ -1,5 +1,9 @@
 # Fireboy and Watergirl
 
+<div align ="center">
+  <img src="screens/video.gif" width="620px" alt="animated gif"/>
+</div>
+
 ## Description
 
 &nbsp;&nbsp;&nbsp;&nbsp;This repository contains the implementation of the Fireboy and Watergirl game in Assembly for the São Carlos Institute of Mathematical and Computing Sciences (ICMC) processor. To simulate the game on your machine, follow the instructions in the repository [Processador ICMC](https://github.com/simoesusp/Processador-ICMC/blob/master/Install_Packages/) compatible with Windows, Linux and MacOS.
